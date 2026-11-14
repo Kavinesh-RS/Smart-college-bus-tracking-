@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart College Bus Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🚌 Smart Bus Tracker</h1>
+    <p>College Transportation System</p>
+</header>
+
+<main>
+    <section class="card">
+        <h2>Bus Information</h2>
+
+        <label>Select Bus:</label>
+        <select id="bus">
+            <option value="Bus 01">Bus 01</option>
+            <option value="Bus 02">Bus 02</option>
+            <option value="Bus 03">Bus 03</option>
+        </select>
+
+        <h3 id="busName">Bus 01</h3>
+        <p>Route: Coimbatore - College</p>
+        <p>Status: <span class="status">Active</span></p>
+        <p>Estimated Arrival: <b id="arrival">15 minutes</b></p>
+
+        <button onclick="updateBus()">
+            Refresh Bus Status
+        </button>
+    </section>
+
+    <section class="card">
+        <h2>Bus Location</h2>
+        <div class="map">
+            📍 Bus Location
+            <p>Live map integration coming soon</p>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>Smart College Bus Tracker | Hackathon Project</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
